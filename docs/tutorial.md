@@ -1,9 +1,19 @@
+---
+title: "Complete Tutorial — Telegram Personal Finance Bot v2.0 (Bynara Edition)"
+version: "2.0"
+language: "English"
+project: "n8n Finance Bot"
+---
+
 # Complete Tutorial --- Telegram Personal Finance Bot v2.0 (Bynara Edition)
 
 > Build a personal Telegram bot that automatically records income and
 > expenses using AI, then stores the structured data in Google Sheets
 > using **Bynara AI Router**, **n8n OpenAI Chat Model**, and **Mistral
 > Large**.
+
+This English edition is a rewritten version of the original tutorial,
+with the same workflow architecture and configuration logic.
 
 ------------------------------------------------------------------------
 
@@ -78,7 +88,7 @@ Telegram Reply
 
 The OpenAI Chat Model is used as the AI language model for the
 Information Extractor. It is configured to communicate with Bynara
-rather than directly with OpenAI. fileciteturn2file4
+rather than directly with OpenAI.
 
 ------------------------------------------------------------------------
 
@@ -171,7 +181,7 @@ The spreadsheet uses these columns:
   2026-07-05 08:00   Income      7000000 July salary        Salary
 
 The original workflow maps these five fields directly into Google
-Sheets. fileciteturn2file15
+Sheets.
 
 ------------------------------------------------------------------------
 
@@ -297,7 +307,6 @@ Use this value in the Telegram Trigger's chat restriction settings.
 
 The reference workflow restricts the Telegram Trigger to a specific Chat
 ID so that the personal bot is not openly available to everyone.
-fileciteturn2file16
 
 ------------------------------------------------------------------------
 
@@ -307,7 +316,6 @@ Bynara is the AI provider used in this version.
 
 The workflow accesses Bynara through n8n's OpenAI Chat Model because
 Bynara provides an OpenAI-compatible API endpoint.
-fileciteturn2file11
 
 ## Step 1
 
@@ -374,7 +382,6 @@ or:
 ```
 
 The n8n OpenAI Chat Model adds the required endpoint automatically.
-fileciteturn2file15
 
 ------------------------------------------------------------------------
 
@@ -491,7 +498,6 @@ Create these headers in row 1:
 
 Keep the header names consistent with the n8n mapping. Changing a header
 without updating the Google Sheets node can break the workflow.
-fileciteturn2file7
 
 ------------------------------------------------------------------------
 
@@ -736,7 +742,7 @@ mistral-large
 ```
 
 This architecture is reflected in the final finance workflow
-documentation. fileciteturn2file4
+documentation.
 
 ------------------------------------------------------------------------
 
@@ -858,7 +864,6 @@ Food, Transport, Shopping, Bills, Entertainment, Salary, Bonus, Other.
 ```
 
 Clear schema descriptions improve parsing consistency.
-fileciteturn2file7
 
 ------------------------------------------------------------------------
 
@@ -906,7 +911,7 @@ Do not enable it.
 
 Bynara is being accessed through the Chat Completions-compatible route.
 If Responses API is enabled, n8n attempts to call `/v1/responses`, which
-can produce an endpoint-not-found error. fileciteturn2file8
+can produce an endpoint-not-found error.
 
 ------------------------------------------------------------------------
 
@@ -1010,7 +1015,6 @@ Category
 
 The reference workflow uses a timestamp expression for the Date field
 and maps the four AI fields into the remaining columns.
-fileciteturn0file7
 
 ------------------------------------------------------------------------
 
@@ -1067,7 +1071,6 @@ https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit
 
 The reference workflow uses the Telegram chat ID from the original
 trigger and formats the amount with the Indonesian locale.
-fileciteturn2file2
 
 ------------------------------------------------------------------------
 
@@ -1173,7 +1176,6 @@ Category: Food
 
 The original tutorial uses these same end-to-end test cases to validate
 the parser, Google Sheets insertion, and Telegram response.
-fileciteturn2file2
 
 ------------------------------------------------------------------------
 
@@ -1289,7 +1291,7 @@ Solution:
 Use Responses API = OFF
 ```
 
-Then execute the node again. fileciteturn2file8
+Then execute the node again.
 
 ------------------------------------------------------------------------
 
@@ -1423,7 +1425,7 @@ is more useful than:
 Transaction amount
 ```
 
-Clear descriptions improve model consistency. fileciteturn2file7
+Clear descriptions improve model consistency.
 
 ------------------------------------------------------------------------
 
@@ -1502,7 +1504,6 @@ A scheduled workflow can send:
 -   AI-generated insights
 
 These extensions are also discussed in the original tutorial.
-fileciteturn2file5
 
 ------------------------------------------------------------------------
 
@@ -1591,7 +1592,6 @@ This is especially important after restarting your computer.
                        │
                        ▼
                 Telegram Reply
-
 
 AI Layer:
 
@@ -1708,4 +1708,3 @@ Telegram Reply
 **Telegram Personal Finance Bot v2.0 --- Bynara Edition**
 
 Happy building!
-
