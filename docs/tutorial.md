@@ -174,11 +174,11 @@ Shopping
 
 The spreadsheet uses these columns:
 
-  Date               Type         Amount Description        Category
+  Date             |  Type    |     Amount  | Description   |     Category
   ------------------ --------- --------- ------------------ -----------
-  2026-07-04 08:15   Expense       25000 Buy coffee         Food
-  2026-07-04 12:30   Expense      150000 Fill up gasoline   Transport
-  2026-07-05 08:00   Income      7000000 July salary        Salary
+  2026-07-04 08:15 |  Expense |      25000 | Buy coffee |         Food
+  2026-07-04 12:30 |  Expense |     150000 | Fill up gasoline |    Transport
+  2026-07-05 08:00 | Income |     7000000 | July salary  |      Salary
 
 The original workflow maps these five fields directly into Google
 Sheets.
